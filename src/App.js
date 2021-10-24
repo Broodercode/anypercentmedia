@@ -1,11 +1,11 @@
 
 import './App.scss';
 import Container from 'react-bootstrap/Container';
-import Embed from './Embed'
-import Embed02 from './Embed02'
+// import Embed from './Embed'
+// import Embed02 from './Embed02'
 import Menu from './Menu/Menu'
 
-import logo from './assets/Logo.png'
+// import logo from './assets/Logo.png'
 function App() {
   return (
 <div className="main">

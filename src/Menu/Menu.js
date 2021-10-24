@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import hand from '../assets/FFVhand.png'
-import logo from '../assets/Logo.png'
 import cmdmenu from '../assets/cmdmenu.png'
 import itemmenuimg from '../assets/itemmenu.png'
 import enemymenu from '../assets/enemymenu.png'
@@ -104,23 +103,23 @@ class Menu extends Component {
 
             <div className="div">
                 <div className="background">
-                <img src={grassbg} alt="" className="" />
+                <img src={grassbg} alt="background" className="" />
                 </div>
                 <div className="sprite01">
-                <img src={Celes} alt="" className="" />
+                <img src={Celes} alt="sprite" className="" />
                 </div>
                 <div className="enemymenu">
-                    <img src={enemymenu} alt="" className="" />
+                    <img src={enemymenu} alt="sprite" className="" />
                 </div>
                 <div className="charmenu">
-                    <img src={charmenu} alt="" className="" />
+                    <img src={charmenu} alt="sprite" className="" />
                 </div>
                 <div className="charactermenu"></div>
                 <div className={this.state.cmdmenu}>
-                    <img src={cmdmenu} alt="" className="" />
+                    <img src={cmdmenu} alt="sprite" className="" />
                 </div>
                 <div className={this.state.pos} >
-                    <img src={imagePath[hand]} />
+                    <img src={imagePath[hand]} alt="hand"/>
 
                 </div>
                 <div className={this.state.cmdtext}>
@@ -155,7 +154,7 @@ class Menu extends Component {
                         Donation: $100
                     </div>
                     <div className="itemmenubox">
-                        <img src={itemmenuimg} />
+                        <img src={itemmenuimg} alt="menubox" />
                     </div>
 
 
