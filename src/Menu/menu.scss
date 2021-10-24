@@ -1,0 +1,215 @@
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sprite01{
+    position: absolute;
+    top: 102px;
+    left: 500px;
+    transform: scale(0.5);
+}
+.cmdmenu{
+    position: absolute;
+    top: 315px;
+    left:156px;
+    visibility: hidden;
+    transition: transform .2s;
+    scale:calc(0);
+
+    &__show {
+        position: absolute;
+        top: 315px;
+        left:156px;
+        visibility:visible;
+        transform:scale(1);
+    }
+
+}
+.cmdtext{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    transition: transform .2s;
+    scale:calc(0);
+
+    &__show {
+        position: absolute;
+        left: 189px;
+        visibility:visible;
+        transform:scale(1);
+    }
+
+}
+
+.pos01 {
+    position: absolute;
+    top: 10px + 315px;
+    left: 171px;
+}
+
+.pos02 {
+    position: absolute;
+    top: 33px+ 315px;
+    left: 171px;
+
+}
+.pos03 {
+    position: absolute;
+    top: 56px + 315px;
+    left: 171px;
+}
+.pos04 {
+    position: absolute;
+    top: 79px + 315px;
+    left: 171px;
+    
+}
+.pos05 {
+    position: absolute;
+    top: 102px+ 315px;
+    left: 171px;
+}
+.itempos01 {
+    position: absolute;
+    top: 17px+ 315px;
+    left: 10px;
+    z-index: 11;
+}
+.itempos02 {
+    position: absolute;
+    top: 38px+ 315px;
+    left: 10px;
+    z-index: 11;
+}
+.itempos03 {
+    position: absolute;
+    // top: 38px+ 315px;
+    // left: 310px;
+    top: 160px;
+    left: 500px;
+    z-index: 11;
+}
+.charpos01 {
+    position: absolute;
+    top: 180px;
+    left: 510px;
+    z-index: 11;
+}
+.menutext01 {
+    position: absolute;
+    top: 10px+ 315px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+}
+.menutext02 {
+    position: absolute;
+    top: 33px + 315px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+}
+.menutext03 {
+    position: absolute;
+    top: 56px+ 315px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+}
+.menutext04 {
+    position: absolute;
+    top: 79px+ 315px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+}
+.menutext05 {
+    position: absolute;
+    top: 102px+ 315px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.itemmenutext01 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 13;
+}
+.itemmenutext02 {
+    position: absolute;
+    top: 33px;
+    left: 20px;
+    z-index: 13;
+}
+.itemmenutext03 {
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    z-index: 13;
+}
+.itemmenutext04 {
+    position: absolute;
+    top: 33px;
+    left: 320px;
+    z-index: 13;
+}
+
+// .itemmenubox {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+.itemmenu {
+    position: absolute;
+    top: 150px+ 315px;
+    left: 10;
+  
+    z-index: 10;
+   
+    visibility: hidden;
+    transition: transform .2s;
+    scale:calc(0);
+  
+
+    &__show {
+        position: absolute;
+        top: 5px + 315px;
+       left: 5px;
+        visibility:visible;
+        transform:scale(1);
+        color: white;
+        font-weight: bold;
+     
+
+        img {
+            position: relative;
+        }
+        p {
+            position: absolute;
+            top: 10px + 315px;
+            left: 120px;
+            z-index: 13;
+        }
+    }
+}
+
+.enemymenu {
+    position: absolute;
+    top: 0 + 315px;
+ left: 0;
+}
+.charmenu {
+  position: absolute;
+  left: 278px;
+  top: 0px + 315px;
+}
+
+.btn {
+    position: relative;
+    top: 500px + 315px;
+
+}
