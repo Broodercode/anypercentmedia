@@ -4,10 +4,24 @@
     left: 0;
 }
 
+
 .sprite01{
     position: absolute;
     top: 102px;
     left: 500px;
+    transform: scale(0.5);
+}
+.sprite02{
+    position: absolute;
+    top: 175px;
+    left: 500px;
+    transform: scale(0.5);
+}
+.sprite03{
+    position: absolute;
+    top: 30px;
+    left: 500px;
+
     transform: scale(0.5);
 }
 .cmdmenu{
@@ -43,6 +57,12 @@
 
 }
 
+.pos00 {
+    position: absolute;
+    top: 10px + 315px;
+    left: 171px;
+    visibility: hidden;
+}
 .pos01 {
     position: absolute;
     top: 10px + 315px;
@@ -207,6 +227,52 @@
   left: 278px;
   top: 0px + 315px;
 }
+
+.chartext {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    color: white;
+    font-weight: bold;
+
+&--ch01 {
+    position: absolute;
+    top: 15px;
+    &__health {
+
+        position: absolute;
+        top: 15px;
+        left: 100px;
+    }
+}
+&--ch02 {
+    position: absolute;
+    top: 35px;
+    &__health {
+
+        position: absolute;
+        top: 35px;
+        left: 100px;
+    }
+}
+&--ch03 {
+    position: absolute;
+    top: 55px;
+    &__health {
+
+        position: absolute;
+        top: 55px;
+        left: 100px;
+    }
+}
+
+    &__health {
+        position: absolute;
+        top: 0px;
+        left: 100px;
+    }
+}
+
 
 .btn {
     position: relative;
