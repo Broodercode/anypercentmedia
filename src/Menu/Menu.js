@@ -27,15 +27,22 @@ const imagePath = {
 const brood = {
     name: 'Brood',
     health: '8340/9422',
-    sprite: Celes,
-    action: Celes,
-    cheer: Celes
+    sprite: DK,
+    action: DKCheer,
+    cheer: DKCheer
 }
 
 const emunisa = {
     name: 'Emunisa',
     health: '3434/5343',
     sprite: Emunisa,
+    action: EmunisaAction,
+    cheer: EmunisaCheer
+}
+const keddril = {
+    name: 'Keddril',
+    health: '769/7449',
+    sprite: Celes,
     action: EmunisaAction,
     cheer: EmunisaCheer
 }
@@ -62,7 +69,7 @@ const spriteTable = [
 ]
 
 const modTable = [
-    emunisa
+    emunisa, keddril
 ]
 class Menu extends Component {
     constructor(props) {
@@ -74,9 +81,9 @@ class Menu extends Component {
             cmdmenu: 'cmdmenu',
             cmdtext: 'cmdtext',
             brood: brood,
-            sp02: spriteTable[0],
-            sp02sprite: spriteTable[0].sprite,
-            mod: modTable[0]
+            sp02: spriteTable[1],
+            sp02sprite: spriteTable[1].sprite,
+            mod: modTable[1]
         }
     }
 
@@ -167,7 +174,7 @@ class Menu extends Component {
                     <img src={grassbg} alt="background" className="" />
                 </div>
                 <div className="sprite01">
-                    <img src={Celes} alt="sprite" className="" />
+                    <img src={brood.sprite} alt="sprite" className="" />
                 </div>
                 <div className="sprite02">
                     <img src={this.state.sp02sprite} alt="sprite" className="" />
