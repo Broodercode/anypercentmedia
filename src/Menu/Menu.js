@@ -218,11 +218,14 @@ class Menu extends Component {
         return (
 
             <div className="div">
+                
                 <div className="background">
                     <img src={grassbg} alt="background" className="" />
+                    
                 </div>
+            
                 <div className="chargroup">
-                    <div className="enemyPos">
+                <div className="enemyPos">
                         <img src={CloudBad} alt="" className="" />
                     </div>
                     <div className="sprite01">
