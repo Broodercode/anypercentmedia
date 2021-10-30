@@ -15,6 +15,16 @@ import RaCheer from '../assets/ffrkrangercheer.png'
 import Emunisa from '../assets/emunisa.png'
 import EmunisaCheer from '../assets/emunisacheer.png'
 import EmunisaAction from '../assets/emunisaanimated.gif'
+import WZ from '../assets/warlordzen.png'
+import WZCheer from '../assets/warlordzencheer.png'
+import WZAction from '../assets/warlordzenani.gif'
+import Tupalev from '../assets/tupalev.png'
+import TupalevCheer from '../assets/tupalevcheer.png'
+import TupalevAction from '../assets/tupalevani.gif'
+import Jim from '../assets/jim.png'
+import Marlic from '../assets/marlic.png'
+
+
 import './menu.scss'
 
 const imagePath = {
@@ -34,31 +44,60 @@ const brood = {
 
 const emunisa = {
     name: 'Emunisa',
-    health: '3434/5343',
+    health: '3434 / 5343',
     sprite: Emunisa,
     action: EmunisaAction,
     cheer: EmunisaCheer
 }
+const warlordzen = {
+    name: 'Warlord Zen',
+    health: '9999 / 9999',
+    sprite: WZ,
+    action: WZAction,
+    cheer: WZCheer
+}
+const tupalev = {
+    name: 'Tupalev',
+    health: '8777 / 8777',
+    sprite: Tupalev,
+    action: TupalevAction,
+    cheer: TupalevCheer
+}
+
 const keddril = {
     name: 'Keddril',
-    health: '769/7449',
+    health: '769 / 7449',
     sprite: Celes,
     action: EmunisaAction,
     cheer: EmunisaCheer
 }
+const marlic = {
+    name: 'Marlic',
+    health: '6455 / 7449',
+    sprite: Marlic,
+    action: Marlic,
+    cheer: Marlic
+}
+const jim = {
+    name: 'Evil Jim',
+    health: '8532 / 8744',
+    sprite: Jim,
+    action: Jim,
+    cheer: Jim
+}
 
 const deathknight = {
     name: 'TwitchUser',
-    health: '3455/4444',
+    health: '345 / 444',
     sprite: DK,
     action: DKAction,
     cheer: DKCheer
-    
+
 }
 
 const ranger = {
     name: 'placeholder',
-    health: '3455/4444',
+    health: '345 / 444',
     sprite: Ra,
     action: RaAction,
     cheer: RaCheer
@@ -69,7 +108,7 @@ const spriteTable = [
 ]
 
 const modTable = [
-    emunisa, keddril
+    emunisa, keddril, warlordzen, tupalev, emunisa, jim, marlic
 ]
 class Menu extends Component {
     constructor(props) {
@@ -83,7 +122,7 @@ class Menu extends Component {
             brood: brood,
             sp02: spriteTable[1],
             sp02sprite: spriteTable[1].sprite,
-            mod: modTable[1]
+            mod: emunisa
         }
     }
 
@@ -91,7 +130,16 @@ class Menu extends Component {
         this.setState(state => ({ hand1: !state.hand1 }))
     }
 
+    selectSprite = () => {
 
+        const sprite = Math.floor(Math.random() * spriteTable.length)
+        const randoMod = Math.floor(Math.random() * modTable.length)
+        const mod = modTable[randoMod]
+        console.log(mod)
+
+        this.setState({ mod: modTable[randoMod], sp02: spriteTable[sprite], sp02sprite: spriteTable[sprite].sprite })
+
+    }
 
     getHand = () => {
 
@@ -116,9 +164,9 @@ class Menu extends Component {
         const itemhide = 'itemmenu'
         const cmdshow = 'cmdmenu__show'
         const cmdtext = 'cmdtext__show'
+
+        this.selectSprite()
         setTimeout(() => {
-
-
             this.setState({ cmdmenu: cmdshow, cmdtext: cmdtext, sp02sprite: this.state.sp02.action })
             setTimeout(() => {
                 this.setState({ pos: pos01 })
@@ -143,26 +191,25 @@ class Menu extends Component {
                                                 setTimeout(() => {
                                                     this.setState({ itemmenu: itemhide })
                                                     setTimeout(() => {
-                                                        this.setState({ pos: pos00, cmdtext: 'cmdtext', cmdmenu: 'cmdmenu', sp02sprite: this.state.sp02.cheer})
+                                                        this.setState({ pos: pos00, cmdtext: 'cmdtext', cmdmenu: 'cmdmenu', sp02sprite: this.state.sp02.cheer })
                                                         setTimeout(() => {
-                                                            this.setState({ sp02sprite: this.state.sp02.sprite})
-                                                        }, 350)
-                                                    }, 150)
-                                                }, 150)
-                                            }, 150)
-                                        }, 150)
-                                    }, 150)
-                                }, 150)
-                            }, 150)
-                        }, 150)
-                    }, 150)
-                }, 150)
-            }, 150)
+                                                            this.setState({ sp02sprite: this.state.sp02.sprite })
+                                                        }, 300)
+                                                    }, 300)
+                                                }, 300)
+                                            }, 300)
+                                        }, 300)
+                                    }, 300)
+                                }, 300)
+                            }, 300)
+                        }, 300)
+                    }, 300)
+                }, 300)
+            }, 300)
 
-        }, 150)
-
-
+        }, 300)
     }
+
 
     render() {
         const hand = this.getHand();
@@ -173,15 +220,18 @@ class Menu extends Component {
                 <div className="background">
                     <img src={grassbg} alt="background" className="" />
                 </div>
-                <div className="sprite01">
-                    <img src={brood.sprite} alt="sprite" className="" />
+                <div className="chargroup">
+                    <div className="sprite01">
+                        <img src={brood.sprite} alt="sprite" className="" />
+                    </div>
+                    <div className="sprite02">
+                        <img src={this.state.sp02sprite} alt="sprite" className="" />
+                    </div>
+                    <div className="sprite03">
+                        <img src={this.state.mod.sprite} alt="sprite" className="" />
+                    </div>
                 </div>
-                <div className="sprite02">
-                    <img src={this.state.sp02sprite} alt="sprite" className="" />
-                </div>
-                <div className="sprite03">
-                    <img src={this.state.mod.sprite} alt="sprite" className="" />
-                </div>
+
                 <div className="enemymenu">
                     <img src={enemymenu} alt="sprite" className="" />
                 </div>
@@ -245,7 +295,7 @@ class Menu extends Component {
 
 
                 </div>
-                <button onClick={this.toggleBits} className="btn">Bits</button>
+                {/* <button onClick={this.toggleBits} className="btn">Bits</button> */}
                 <button onClick={this.toggleSub} className="btn">Subscription</button>
             </div>
 
@@ -253,5 +303,6 @@ class Menu extends Component {
         );
     }
 }
+
 
 export default Menu;

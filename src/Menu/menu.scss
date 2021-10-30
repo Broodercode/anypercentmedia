@@ -4,13 +4,31 @@
     left: 0;
 }
 
-
+.main{
+    position: absolute;
+    width: 600px;
+    height: 450px;
+}
 .sprite01{
     position: absolute;
     top: 102px;
     left: 500px;
     transform: scale(0.5);
+    transition: left 4s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+    
+   &:hover {
+    transition: left 4s;
+    left: 300px;
+    }
+    // // animation-timing-function: ease-in;
+    // &--trans {
+    //     left: 700px;
+    // }
+
 }
+
 .sprite02{
     position: absolute;
     top: 175px;
@@ -111,12 +129,20 @@
     left: 500px;
     z-index: 11;
 }
-.charpos01 {
-    position: absolute;
-    top: 180px;
-    left: 510px;
-    z-index: 11;
-}
+// .charpos01 {
+//     position: absolute;
+//     top: 180px;
+//     left: 510px;
+//     z-index: 11;
+//     transition: ease-in;
+//     visibility: hidden;
+
+//     &--start {
+//         position: absolute;
+//         left: 640px;
+//         transform: translateX(140px)
+//     }
+// }
 .menutext01 {
     position: absolute;
     top: 10px+ 315px;
@@ -238,38 +264,49 @@
 &--ch01 {
     position: absolute;
     top: 15px;
+    width: 200px;
     &__health {
 
         position: absolute;
         top: 15px;
-        left: 100px;
+        left: 185px;
+        width: 100px;
+        text-align: right;
     }
 }
 &--ch02 {
     position: absolute;
     top: 35px;
+    width: 200px;
     &__health {
 
         position: absolute;
         top: 35px;
-        left: 100px;
+        left: 185px;
+        width: 100px;
+        text-align: right;
     }
 }
 &--ch03 {
     position: absolute;
     top: 55px;
+    width: 200px;
     &__health {
 
         position: absolute;
         top: 55px;
-        left: 100px;
+        
+        left: 185px;
+        width: 100px;
+        text-align: right;
     }
 }
 
     &__health {
         position: absolute;
         top: 0px;
-        left: 100px;
+        left: 200px;
+        width: 100px;
     }
 }
 
@@ -277,5 +314,6 @@
 .btn {
     position: relative;
     top: 500px + 315px;
-
+    background-color: green;
+    color: white;
 }
