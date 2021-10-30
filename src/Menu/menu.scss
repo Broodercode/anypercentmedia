@@ -310,6 +310,13 @@
     }
 }
 
+.enemyPos {
+position: absolute;
+top: 0px;
+left: 50px;
+transform: scale(.5);
+}
+
 
 .btn {
     position: relative;

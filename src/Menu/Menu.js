@@ -23,6 +23,7 @@ import TupalevCheer from '../assets/tupalevcheer.png'
 import TupalevAction from '../assets/tupalevani.gif'
 import Jim from '../assets/jim.png'
 import Marlic from '../assets/marlic.png'
+import CloudBad from '../assets/CloudBad.png'
 
 
 import './menu.scss'
@@ -221,6 +222,9 @@ class Menu extends Component {
                     <img src={grassbg} alt="background" className="" />
                 </div>
                 <div className="chargroup">
+                    <div className="enemyPos">
+                        <img src={CloudBad} alt="" className="" />
+                    </div>
                     <div className="sprite01">
                         <img src={brood.sprite} alt="sprite" className="" />
                     </div>
