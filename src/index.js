@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 // import Embed from './Embed'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <App />   
+    
+  ,
   document.getElementById('root')
 );
 

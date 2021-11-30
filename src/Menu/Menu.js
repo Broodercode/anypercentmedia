@@ -24,9 +24,13 @@ import TupalevAction from '../assets/tupalevani.gif'
 import Jim from '../assets/jim.png'
 import Marlic from '../assets/marlic.png'
 import CloudBad from '../assets/CloudBad.png'
+import axios from 'axios'
 
 
 import './menu.scss'
+
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+const CLIENT_SECRET = process.env.REACT_APP_SECRET;
 
 const imagePath = {
     hand00: null,
@@ -111,6 +115,11 @@ const spriteTable = [
 const modTable = [
     emunisa, keddril, warlordzen, tupalev, emunisa, jim, marlic
 ]
+
+const api = axios.create({
+    baseURL: `http://localhost:3500/tapi`
+})
+
 class Menu extends Component {
     constructor(props) {
         super(props);
@@ -123,13 +132,25 @@ class Menu extends Component {
             brood: brood,
             sp02: spriteTable[1],
             sp02sprite: spriteTable[1].sprite,
-            mod: emunisa
+            mod: emunisa,
+            tests: []
         }
+        
+        // this.getTest()
     }
 
-    toggleBits = () => {
-        this.setState(state => ({ hand1: !state.hand1 }))
-    }
+    c
+    // toggleBits = () => {
+    //     fetch('http://localhost:8888/.netlify/functions/twitchevents')     
+    //     .then(response => {
+    //         return console.log(response)
+    //     })
+    //     .then(data => {
+    //         return console.log(data)
+            
+    //         // setLoaded(data.results);
+    //     })
+    // }
 
     selectSprite = () => {
 
@@ -139,7 +160,7 @@ class Menu extends Component {
         console.log(mod)
 
         this.setState({ mod: modTable[randoMod], sp02: spriteTable[sprite], sp02sprite: spriteTable[sprite].sprite })
-
+        
     }
 
     getHand = () => {
@@ -149,6 +170,22 @@ class Menu extends Component {
     }
     getDown = () => {
         return this.state.hand1 ? 'pos01' : 'pos02'
+    }
+
+    getTest = async () => {
+        try {
+            let data = await api.get('/').then(({data }) => data)
+            this.setState({ tests: data})
+        } catch (err) {
+            console.log(err)
+        }
+     
+    }
+
+    toggleBits = async () => {
+    //    let res = await api.post('/', {name: 'Brood', id: 1, author: 'btest'})
+    //    console.log(res)
+       this.getTest()
     }
 
     toggleSub = () => {
@@ -165,7 +202,9 @@ class Menu extends Component {
         const itemhide = 'itemmenu'
         const cmdshow = 'cmdmenu__show'
         const cmdtext = 'cmdtext__show'
-
+        
+      
+        
         this.selectSprite()
         setTimeout(() => {
             this.setState({ cmdmenu: cmdshow, cmdtext: cmdtext, sp02sprite: this.state.sp02.action })
@@ -218,8 +257,8 @@ class Menu extends Component {
         return (
 
             <div className="div">
-                
-                <div className="background">
+               
+                {/* <div className="background">
                     <img src={grassbg} alt="background" className="" />
                     
                 </div>
@@ -301,9 +340,11 @@ class Menu extends Component {
 
 
 
-                </div>
-                {/* <button onClick={this.toggleBits} className="btn">Bits</button> */}
+                </div> */}
+                {this.state.tests.map(test => <h2 key={test.id}>{test.name}</h2>)}
+                <button onClick={this.toggleBits} className="btn">Bits</button>
                 <button onClick={this.toggleSub} className="btn">Subscription</button>
+             
             </div>
 
 
