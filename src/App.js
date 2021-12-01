@@ -16,7 +16,7 @@ function App() {
   <div className="container">
     <div className="row">
     <div className="box">
-    <a href="mailto: business@anypercentmedia.com">
+    <a href="mailto: business@anypercentmedia.com ">
 
     
         <img className="img-fluid" src={logo} alt="logo"></img>
