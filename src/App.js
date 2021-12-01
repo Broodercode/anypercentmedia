@@ -5,8 +5,6 @@ import Embed from './Embed'
 import Embed02 from './Embed02'
 import Embed03 from './Embed03'
 import Embed04 from './Embed04'
-// import Menu from './Menu/Menu'
-import TwitchWH from './webhook/TwitchWH'
 
 import logo from './assets/Logo.png'
 function App() {
@@ -43,9 +41,6 @@ function App() {
 
  
    
-    {/* <Menu></Menu> */}
-    {/* <TwitchWH></TwitchWH> */}
-    {/* <TwitchEvent></TwitchEvent> */}
   </div>
 
 
