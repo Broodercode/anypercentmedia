@@ -14,6 +14,7 @@ function App() {
 
 <Container fluid>
   <div className="container">
+    <div className="row">
     <div className="box">
     <a href="mailto: business@anypercentmedia.com">
 
@@ -22,6 +23,8 @@ function App() {
         </a>
 
     </div>
+    </div>
+
 <div className="embeds">
 <div className="embed--01">
 <Embed></Embed>
