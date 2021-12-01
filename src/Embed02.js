@@ -31,8 +31,8 @@ Embed.defaultProps = {
     targetID: 'twitch-embed',
 
   channel: 'Arcus',
-  height: '400',
-  width: '340'
+  height: '600',
+  width: '510'
 
 }
 
