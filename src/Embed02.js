@@ -2,7 +2,7 @@ import React from "react";
 
 const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js';
 
-class Embed extends React.Component {
+class Embed02 extends React.Component {
     componentDidMount() {
     let embed;
     const script = document.createElement('script');
@@ -27,8 +27,8 @@ class Embed extends React.Component {
   }
 }
 
-Embed.defaultProps = {
-    targetID: 'twitch-embed',
+Embed02.defaultProps = {
+    targetID: 'twitch-embed-02',
 
   channel: 'Arcus',
   height: '600',
@@ -36,4 +36,4 @@ Embed.defaultProps = {
 
 }
 
-export default Embed;
+export default Embed02;

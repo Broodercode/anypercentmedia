@@ -2,7 +2,7 @@ import React from "react";
 
 const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js';
 
-class Embed extends React.Component {
+class Embed03 extends React.Component {
     componentDidMount() {
     let embed;
     const script = document.createElement('script');
@@ -27,8 +27,8 @@ class Embed extends React.Component {
   }
 }
 
-Embed.defaultProps = {
-    targetID: 'twitch-embed',
+Embed03.defaultProps = {
+    targetID: 'twitch-embed-03',
 
   channel: 'FFTBattleground',
   height: '600',
@@ -36,4 +36,4 @@ Embed.defaultProps = {
 
 }
 
-export default Embed;
+export default Embed03;

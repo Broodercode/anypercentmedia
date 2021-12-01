@@ -24,23 +24,38 @@ function App() {
 
     </div>
     </div>
-
-<div className="embeds">
+<div className="row">
+  <div className="col c1">
+  <Embed/>
+  </div>
+  <div className="col c2">
+  <Embed02/>
+  </div>
+</div>
+<div className="row">
+  <div className="col c1">
+  <Embed03/>
+  </div>
+  <div className="col c2">
+  <Embed04/>
+  </div>
+</div>
+{/* <div className="embeds">
 <div className="embed--01">
 <Embed></Embed>
 </div>
 <div className="embed--02">
 <Embed02></Embed02>
 </div>
-</div>
-<div className="embeds--02">
+</div> */}
+{/* <div className="embeds--02">
 <div className="embed--03">
 <Embed03></Embed03>
 </div>
 <div className="embed--04">
 <Embed04></Embed04>
 </div>
-</div>
+</div> */}
 
  
    
