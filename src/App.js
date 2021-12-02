@@ -12,10 +12,10 @@ function App() {
 <div className="main">
 
 
-<Container fluid>
-  <div className="container">
+{/* <Container fluid> */}
+  <div className="container-fluid ">
     <div className="row">
-    <div className="box">
+    <div className="mx-auto">
     <a href="mailto: business@anypercentmedia.com ">
 
     
@@ -24,20 +24,40 @@ function App() {
 
     </div>
     </div>
+    
 <div className="row">
-  <div className="col c1">
-  <Embed/>
+  <div className="mx-auto">
+  <h1 className="events">Upcoming Events: Final Fantasy 6 All Characters and Espers Race</h1>
+  <h2 className="events">Saturday December 4th, 2021 @ 1pm EST</h2>
   </div>
-  <div className="col c2">
-  <Embed02/>
+ 
+</div>
+<div className="row ">
+  <div className="col ">
+    <div className="cc">
+    <Embed/>
+    </div>
+  
+  </div>
+  <div className="col">
+    <div className="cc">
+    <Embed02/>
+    </div>
+  
   </div>
 </div>
 <div className="row">
-  <div className="col c1">
-  <Embed03/>
+  <div className="col">
+    <div className="cc">
+    <Embed03/>
+    </div>
+ 
   </div>
-  <div className="col c2">
-  <Embed04/>
+  <div className="col">
+    <div className="cc">
+    <Embed04/>
+    </div>
+ 
   </div>
 </div>
 {/* <div className="embeds">
@@ -63,7 +83,7 @@ function App() {
 
 
   
-</Container>
+{/* </Container> */}
 
 </div>
   );

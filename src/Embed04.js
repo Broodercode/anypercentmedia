@@ -31,8 +31,8 @@ Embed04.defaultProps = {
     targetID: 'twitch-embed-04',
 
   channel: 'bdudegames',
-  height: '600',
-  width: '510'
+  height: '800',
+  width: '800'
 
 }
 
