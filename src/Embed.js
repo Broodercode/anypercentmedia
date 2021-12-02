@@ -31,8 +31,8 @@ Embed.defaultProps = {
     targetID: 'twitch-embed',
 
   channel: 'Dyne_Nuitari',
-  height: '800',
-  width: '800'
+  height: '880',
+  width: '880'
 
 }
 

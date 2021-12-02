@@ -30,9 +30,9 @@ class Embed02 extends React.Component {
 Embed02.defaultProps = {
     targetID: 'twitch-embed-02',
 
-  channel: 'BroodVX',
-  height: '800',
-  width: '800'
+  channel: 'Zheal',
+  height: '880',
+  width: '880'
 
 }
 
