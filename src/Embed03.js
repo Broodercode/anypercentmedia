@@ -31,8 +31,9 @@ Embed03.defaultProps = {
     targetID: 'twitch-embed-03',
 
   channel: 'broodvx',
-  height: '880',
-  width: '880'
+  height: '486',
+  width: '864',
+  layout: 'video'
 
 }
 

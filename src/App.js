@@ -16,11 +16,11 @@ function App() {
   <div className="container-fluid ">
     <div className="row">
     <div className="mx-auto">
-    <a href="mailto: business@anypercentmedia.com ">
+
 
     
         <img className="img-fluid" src={logo} alt="logo"></img>
-        </a>
+    
 
     </div>
     </div>
@@ -33,13 +33,13 @@ function App() {
  
 </div>
 <div className="row ">
-  <div className="col ml-3">
+  <div className="col ml-5">
     <div className="cc">
     <Embed/>
     </div>
   
   </div>
-  <div className="col mr-3">
+  <div className="col mr-5">
     <div className="cc">
     <Embed02/>
     </div>
@@ -47,13 +47,13 @@ function App() {
   </div>
 </div>
 <div className="row ">
-  <div className="col ml-3">
+  <div className="col ml-5">
     <div className="cc">
     <Embed03/>
     </div>
  
   </div>
-  <div className="col mr-3">
+  <div className="col mr-5">
     <div className="cc">
     <Embed04/>
     </div>
