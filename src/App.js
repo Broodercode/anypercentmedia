@@ -33,27 +33,27 @@ function App() {
  
 </div>
 <div className="row ">
-  <div className="col ">
+  <div className="col ml-3">
     <div className="cc">
     <Embed/>
     </div>
   
   </div>
-  <div className="col">
+  <div className="col mr-3">
     <div className="cc">
     <Embed02/>
     </div>
   
   </div>
 </div>
-<div className="row">
-  <div className="col">
+<div className="row ">
+  <div className="col ml-3">
     <div className="cc">
     <Embed03/>
     </div>
  
   </div>
-  <div className="col">
+  <div className="col mr-3">
     <div className="cc">
     <Embed04/>
     </div>
