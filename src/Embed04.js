@@ -30,7 +30,7 @@ class Embed04 extends React.Component {
 Embed04.defaultProps = {
     targetID: 'twitch-embed-04',
 
-  channel: 'bdudegames',
+  channel: 'im_nightshade',
   height: '500',
   width: '100%',
   layout: 'video'
