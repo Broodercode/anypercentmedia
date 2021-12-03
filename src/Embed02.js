@@ -31,8 +31,8 @@ Embed02.defaultProps = {
     targetID: 'twitch-embed-02',
 
   channel: 'Zheal',
-  height: '486',
-  width: '864',
+  height: '500',
+  width: '100%',
   layout: 'video'
 
 }

@@ -6,18 +6,20 @@ background-color: #88a8d9;
 }
 
 .cc {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: inline-block;
+    min-width: 400px;
+    min-height: 300px;
+    // max-width: 720px
+    // position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // display: inline-block;
 }
 
 .ct {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // display: inline-block;
 }
 
 // .box {
