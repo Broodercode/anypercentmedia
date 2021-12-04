@@ -28,7 +28,7 @@ function App() {
 <div className="row">
   <div className="col">
   <h1 className="events">Upcoming Events: Final Fantasy 6 All Characters and Espers Race</h1>
-  <h2 className="events">Saturday December 4th, 2021 @ 1pm EST</h2>
+  <h2 className="events">(🔴)The race is now live(Dyne for main audio)</h2>
   </div>
  
 </div>
