@@ -27,8 +27,8 @@ function App() {
     
 <div className="row">
   <div className="col">
-  <h1 className="events">Upcoming Events: Final Fantasy 6 All Characters and Espers Race</h1>
-  <h2 className="events">(🔴)The race is now live(Dyne for main audio)</h2>
+  <h1 className="events">FF6 Race Results: Dyne_Nuitari victory by 13 seconds</h1>
+  <h2 className="events">(🔴) Check out these other content creators</h2>
   </div>
  
 </div>

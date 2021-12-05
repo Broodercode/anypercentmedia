@@ -30,7 +30,7 @@ class Embed extends React.Component {
 Embed.defaultProps = {
     targetID: 'twitch-embed',
 
-  channel: 'Dyne_Nuitari',
+  channel: 'Broodvx',
   height: '500',
   width: '100%',
   layout: 'video'
