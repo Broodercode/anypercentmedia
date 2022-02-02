@@ -27,12 +27,28 @@ function App() {
     
 <div className="row">
   <div className="col">
-  <h1 className="events">FF6 Race Results: Dyne_Nuitari victory by 13 seconds</h1>
-  <h2 className="events">(🔴) Check out these other content creators</h2>
+  <h1 className="events">Final Fantasy 6 T-Edition Race</h1>
+  <h2 className="events">(🔴) Zheal vs BroodVX</h2>
   </div>
  
 </div>
-<div className="row ">
+<div className="viddisplay">
+  <Embed/>
+  <Embed02/>
+</div>
+<div className="chatdisplay">
+<iframe id="twitch-chat-embed"
+        src="https://www.twitch.tv/embed/eviljimx/chat?parent=dev.twitch.tv"
+        height="400"
+        width="50%">
+</iframe>
+<iframe id="twitch-chat-embed"
+        src="https://www.twitch.tv/embed/theamericandweem/chat?parent=dev.twitch.tv"
+        height="400"
+        width="50%">
+</iframe>
+</div>
+{/* <div className="row ">
   <div className="col mx-0">
     <div className="cc">
     <Embed/>
@@ -45,8 +61,8 @@ function App() {
     </div>
   
   </div>
-</div>
-<div className="row ">
+</div> */}
+{/* <div className="row ">
   <div className="col mx-0">
     <div className="cc">
     <Embed03/>
@@ -59,7 +75,7 @@ function App() {
     </div>
  
   </div>
-</div>
+</div> */}
 {/* <div className="embeds">
 <div className="embed--01">
 <Embed></Embed>

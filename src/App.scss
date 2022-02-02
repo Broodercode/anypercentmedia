@@ -5,9 +5,29 @@ background-color: #88a8d9;
 
 }
 
+// .vid {
+//     position: relative;
+//     display: inline;
+//     &-01 {
+        
+//     }
+//     }
+
+.TwEmbed {
+    position: relative;
+    display: inline-block;
+    min-width: 50%;
+}
+
+.chatdisplay {
+    position: relative;
+    display: inline-block;
+    min-width: 100%;
+}
+
 .cc {
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 50%;
+    // min-height: 300px;
     // max-width: 720px
     // position: relative;
     // left: 50%;

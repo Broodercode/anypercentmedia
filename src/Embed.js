@@ -19,7 +19,7 @@ class Embed extends React.Component {
   render() {
 
     return (
-        <div>
+        <div className="TwEmbed">
     
         <div id={this.props.targetID}></div>
       </div>
@@ -29,10 +29,9 @@ class Embed extends React.Component {
 
 Embed.defaultProps = {
     targetID: 'twitch-embed',
-
-  channel: 'Broodvx',
-  height: '500',
-  width: '100%',
+    width: '100%',
+    height: '500',
+  channel: 'EvilJimX',
   layout: 'video'
 
 }
