@@ -38,12 +38,12 @@ function App() {
 </div>
 <div className="chatdisplay">
 <iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/eviljimx/chat?parent=dev.twitch.tv"
+        src="https://www.twitch.tv/embed/eviljimx/chat?parent=anypercentmedia.com"
         height="400"
         width="50%">
 </iframe>
 <iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/theamericandweem/chat?parent=dev.twitch.tv"
+        src="https://www.twitch.tv/embed/theamericandweem/chat?parent=anypercentmedia.com"
         height="400"
         width="50%">
 </iframe>
