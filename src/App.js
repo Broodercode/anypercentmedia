@@ -43,7 +43,7 @@ function App() {
         width="50%">
 </iframe>
 <iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/theamericandweem/chat?parent=https://www.anypercentmedia.com/"
+        src="https://www.twitch.tv/embed/theamericandweem/chat?parent=anypercentmedia.com&parent=www.anypercentmedia.com"
         height="400"
         width="50%">
 </iframe>
