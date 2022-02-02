@@ -31,7 +31,7 @@ Embed.defaultProps = {
     targetID: 'twitch-embed',
     width: '100%',
     height: '500',
-  channel: 'EvilJimX',
+  channel: 'Zheal',
   layout: 'video'
 
 }

@@ -30,10 +30,10 @@ class Embed02 extends React.Component {
 Embed02.defaultProps = {
     targetID: 'twitch-embed-02',
   width: '100%',
-  channel: 'theamericandweem',
+  channel: 'broodvx',
   height: '500px',
   layout: 'video'
-  
+
 }
 
 export default Embed02;
