@@ -27,8 +27,8 @@ function App() {
     
 <div className="row">
   <div className="col">
-  <h1 className="events">Final Fantasy 6 T-Edition Race</h1>
-  <h2 className="events">(🔴) Zheal vs BroodVX</h2>
+  <h1 className="events">Any% Media Streamers</h1>
+  <h2 className="events">(🔴) Bdewd and BroodVX</h2>
   </div>
  
 </div>
@@ -37,12 +37,12 @@ function App() {
   <Embed02/>
 </div>
 <div className="chatdisplay">
-<iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/zheal/chat?darkpopout&parent=anypercentmedia.com&parent=www.anypercentmedia.com"
+<iframe id="twitch-chat-embed-01"
+        src="https://www.twitch.tv/embed/bdewd/chat?darkpopout&parent=anypercentmedia.com&parent=www.anypercentmedia.com"
         height="400"
         width="50%">
 </iframe>
-<iframe id="twitch-chat-embed"
+<iframe id="twitch-chat-embed-02"
         src="https://www.twitch.tv/embed/broodvx/chat?darkpopout&parent=anypercentmedia.com&parent=www.anypercentmedia.com"
         height="400"
         width="50%">
